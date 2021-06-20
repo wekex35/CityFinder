@@ -17,7 +17,7 @@ func hello(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	fmt.Println("hello")
+
 	// getCountryList()
 	// getCityListByCountry("Chile")
 	// searchCity("mum")
@@ -39,7 +39,9 @@ func main() {
 	// http.Handle("/images/", http.StripPrefix("/images", http.FileServer(http.Dir("./images"))))
 
 	// http.HandleFunc("/getIp", getSystemIp)
-	// open("http://localhost" + port)
+
+	open("http://localhost" + port)
+	fmt.Println("Server Running at Port :7007")
 	http.ListenAndServe(*addr, nil)
 	// go func() {
 	// 	trayhost.SetUrl("http://localhost" + port)
